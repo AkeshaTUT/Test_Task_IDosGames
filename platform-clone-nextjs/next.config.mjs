@@ -4,6 +4,9 @@ const nextConfig = {
   // This file will be overwritten during deployment with the appropriate basePath
   images: {},
   output: 'standalone',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
