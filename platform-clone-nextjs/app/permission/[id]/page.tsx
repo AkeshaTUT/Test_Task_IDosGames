@@ -7,14 +7,14 @@ export async function generateStaticParams() {
     { id: '2' },
     { id: '3' },
     { id: '4' },
-    { id: '5' }, // добавлен id 5
+    { id: '5' },
   ];
 }
 
-interface PageProps {
+interface PermissionPageProps {
   params: { id: string };
 }
 
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: PermissionPageProps) {
   return <PermissionDetailClient id={params.id} />;
 } 
