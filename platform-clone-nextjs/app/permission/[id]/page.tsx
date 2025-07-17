@@ -1,7 +1,6 @@
 import PermissionDetailClient from '@/components/PermissionDetailClient';
 
 export async function generateStaticParams() {
-  // TODO: Заменить на реальные id permissions из БД
   return [
     { id: '1' },
     { id: '2' },
@@ -11,9 +10,9 @@ export async function generateStaticParams() {
   ];
 }
 
-interface PermissionPageProps {
+type PermissionPageProps = {
   params: { id: string };
-}
+};
 
 export default function Page({ params }: PermissionPageProps) {
   return <PermissionDetailClient id={params.id} />;
