@@ -1,5 +1,9 @@
 import RoleDetailClient from '@/components/RoleDetailClient';
 
-export default function RoleDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: { id: string };
+}
+
+export default function Page({ params }: PageProps) {
   return <RoleDetailClient id={params.id} />;
 } 

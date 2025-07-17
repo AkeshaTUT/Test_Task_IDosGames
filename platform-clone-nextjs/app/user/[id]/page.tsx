@@ -1,5 +1,9 @@
 import UserDetailClient from '@/components/UserDetailClient';
 
-export default function UserDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: { id: string };
+}
+
+export default function Page({ params }: PageProps) {
   return <UserDetailClient id={params.id} />;
 } 
