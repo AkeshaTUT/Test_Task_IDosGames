@@ -22,7 +22,7 @@ const TABS = [
   { key: 'history', label: 'История' },
 ];
 
-export default function UserDetailPage({ params }: { params: { id: string } }) {
+export default function UserDetailPage({ params }: any) {
   const [tab, setTab] = useState('profile');
   // В реальном проекте данные пользователя подгружаются по params.id
   return (

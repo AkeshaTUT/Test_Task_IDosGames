@@ -22,7 +22,7 @@ const TABS = [
   { key: 'history', label: 'История' },
 ];
 
-export default function PermissionDetailPage({ params }: { params: { id: string } }) {
+export default function PermissionDetailPage({ params }: any) {
   const [tab, setTab] = useState('info');
   // В реальном проекте данные права подгружаются по params.id
   return (

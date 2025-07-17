@@ -22,7 +22,7 @@ const TABS = [
   { key: 'history', label: 'История' },
 ];
 
-export default function RoleDetailPage({ params }: { params: { id: string } }) {
+export default function RoleDetailPage({ params }: any) {
   const [tab, setTab] = useState('info');
   // В реальном проекте данные роли подгружаются по params.id
   return (
